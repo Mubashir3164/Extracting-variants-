@@ -22,6 +22,7 @@ http://genome.ucsc.edu/FAQ/FAQformat
 Here, chromosome is the chromosome name, start is the start position, and end is the end position on chromosome. e.g To extract variants in CDS region of a gene, we can make a tab delimited text file with .bed extension. Make sure Chromosome names in the bed file should be the same as chromosome names in the large dataset. 
 # Extracting variants 
 Run the following command to extract variants
+
 java -jar SnpSift.jar intidx large_data.vcf genes.bed > out.vcf
 
 The output.vcf file will have the variants you are interested in. 
